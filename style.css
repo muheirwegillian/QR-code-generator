@@ -1,6 +1,8 @@
 :root{
     --bg-color: #001122;
     --primary-color: #155e75;
+    --board-radius: 8px;
+    --secondary-color: #ffffff;
 }
 
 *{
@@ -15,8 +17,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: var(--bcg-color);
 }
 .box{
    background-color: var(--primary-color);
+   padding: 30px;
+   width: 400px;
+   border-radius: var(--board-radius);
+}
+
+.qr-header h1{
+    font-size: 26px;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.qr-header input{
+    width: 100%;
+   magin-block: 12px;
 }
